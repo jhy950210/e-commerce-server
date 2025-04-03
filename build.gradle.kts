@@ -18,14 +18,14 @@ version = getGitHash()
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(17)
+		languageVersion = JavaLanguageVersion.of(21)
 	}
 }
 
 kotlin {
 	compilerOptions {
 		freeCompilerArgs.addAll("-Xjsr305=strict")
-		jvmToolchain(17)
+		jvmToolchain(21)
 	}
 }
 
